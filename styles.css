@@ -5,15 +5,83 @@ body{
   margin: 0;
   padding: 0;
   font-family: 'Noto Sans', sans-serif;
+  background-color: #575757;
+  background-image: url('https://discordapp.com/assets/a00896b9b5af1ccebeb80816b71995d0.svg');
+  background-size: cover;
 }
+
 a{
   text-decoration: none;
-  color: #0499ff;
+  color: #000000;
 }
 .nav{
-  min-height:40px;
-  background-color: #000;
+  min-height: 0;
+  background-color: #424242;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   font-weight: 600;
+  font-size: 50px;
+  border: 2px solid #000000;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  position: fixed;
+  width: 100%;
+  transition: all 0.3s;
+}
+.nav:hover{
+  min-height: 20px;
+  border: 5px solid #000000;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.menu{
+  display: flex;
+  flex-flow: row;
+  color: #000000;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: space-around;
+}
+.button {
+  padding: 10px;
+  height: 90px;
+  border-radius: 15px;
+  border: 5px solid #000000;
+  background-color: #424242;
+  transition: all 0.3s;
+}
+.button:hover{
+  border: 5px solid #424242;
+  background-color: #000000;
+  color: #424242;
+}
+
+.textHover{
+  transition: all 0.2s;
+}
+.textHover:hover{
+  transform: scale(1.1);
+}
+.textHover:active{
+  transform: scale(1);
+}
+
+.imgHeader{
+  width: 100px;
+  height: 100px;
+}
+header{
+  padding-top: 200px;
+  text-align: center;
+}
+header img{
+  height: 250px;
+  width: 250px;
+}
+footer{
+  background-color: #575757;
+  text-align: center;
+  padding-top: 30%;
+  color: #000;
 }
