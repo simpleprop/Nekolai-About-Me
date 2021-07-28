@@ -35,6 +35,7 @@ a{
   border: 5px solid #000000;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
+  background-color: #474747;
 }
 .menu{
   display: flex;
@@ -47,6 +48,7 @@ a{
 }
 .button {
   padding: 10px;
+  margin: 10px
   height: 70px;
   border-radius: 15px;
   border: 5px solid #000000;
@@ -74,6 +76,12 @@ a{
   height: 115px;
   padding-bottom: 10px;
 }
+.imgButton{
+  width: 150px;
+  height: 150px;
+  padding: 0px;
+  margin: 10px;
+}
 .list{
   list-style-type: none;
   display: flex;
@@ -82,7 +90,7 @@ a{
 }
 
 main{
-  padding-top: 200px;
+  padding-top: 150px;
   text-align: center;
 }
 main img{
