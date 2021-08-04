@@ -8,14 +8,15 @@ body{
   background-color: #575757;
   background-image: url('https://discordapp.com/assets/a00896b9b5af1ccebeb80816b71995d0.svg');
   background-size: contain;
-  background-position: center;
-  background-blend-mode: color-burn;
+  background-attachment: fixed;
+  background-blend-mode: soft-light;
 }
 
 a{
   text-decoration: none;
   color: #000000;
 }
+
 .nav{
   min-height: 0;
   background-color: #424242;
@@ -26,6 +27,7 @@ a{
   border: 2px solid #000000;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  margin-bottom: 100px;
   position: fixed;
   width: 100%;
   transition: all 0.3s;
@@ -48,7 +50,7 @@ a{
 }
 .button {
   padding: 10px;
-  margin: 10px
+  margin: 10px;
   height: 70px;
   border-radius: 15px;
   border: 5px solid #000000;
@@ -61,6 +63,16 @@ a{
   color: #424242;
 }
 
+.block{
+  padding-top: 150px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.block2{
+  padding-top: 150px;
+}
 .textHover{
   transition: all 0.2s;
 }
@@ -90,19 +102,17 @@ a{
 }
 
 main{
-  padding-top: 150px;
+  text-align: center;
+}
+footer{
+  margin-top: 100%;
   text-align: center;
 }
 main img{
   height: 250px;
   width: 250px;
 }
-footer{
-  background-color: #575757;
-  text-align: center;
-  padding-top: 30%;
-  color: #000;
-}
+
 .tag{
   text-align: center;
   padding: 1px;
