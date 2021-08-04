@@ -11,13 +11,13 @@
         font-size: 20px;
       }
       h1:nth-child(2) {
-        font-famly: 'Noto Sans', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
         font-weight: 1000;
         padding: 0;
         margin: 0;
       }
       h1:nth-child(3) {
-        font-famly: 'Noto Sans', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
         font-weight: normal;
         padding: 0;
         margin: 0;
@@ -28,11 +28,13 @@
         padding: 0;
         margin: 0;
       }
+      #layer1 { z-index: 2; }
+      #layer2 { z-index: 1; }
     </style>
     <title> About Me </title>
   </head>
   <body>
-    <header class="nav">
+    <header class="nav" id="layer1">
       <div class="menu">
         <a href="index.html"><img class="imgHeader textHover" src="./images/Icon.png" alt="icon"> </a>
         <a href="index.html"><div class="button"> Home </div></a>
@@ -41,7 +43,7 @@
         <a href="index4.html"><div class="button"> Contact </div></a>
       </div>
     </header>
-    <main>
+    <main class="block" id="layer2">
       <img class="textHover" src="./images/Icon.png" alt="icon">
       <h1 class="textHover"> Hello! My name is Nikolai. </h1>
       <h1 class="textHover"> I live in Ukraine, Kyiv And I am a frontend beginner!</h1>
@@ -54,7 +56,7 @@
         <li class="tag textHover"> Publish </li>
       </ul>
     </main>
-    <footer>
+    <footer class="block">
       <div>
         <h2 class="textHover"> @Copyright 2021, Melleev </h2>
       </div>

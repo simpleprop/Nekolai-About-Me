@@ -8,8 +8,12 @@
     <meta charset="utf-8">
     <title> Projects </title>
   </head>
+  <style>
+    #layer1 { z-index: 2; }
+    #layer2 { z-index: 1; }
+  </style>
   <body>
-    <header class="nav">
+    <header class="nav" id="layer1">
       <div class="menu">
         <a href="index.html"><img class="imgHeader textHover" src="./images/Icon.png" alt="icon"> </a>
         <a href="index.html"><div class="button"> Home </div></a>
@@ -18,11 +22,11 @@
         <a href="index4.html"><div class="button"> Contact </div></a>
       </div>
     </header>
-    <main>
+    <main class="block" id="layer2">
       <h1 class="textHover"> Cheack out my GitHub to see all projects! </h1>
       <a href="https://github.com/simpleprop"><img class="textHover" src="./images/github.png" alt="github"></a>
     </main>
-    <footer>
+    <footer class="block">
       <div>
         <h2 class="textHover"> @Copyright 2021, Melleev </h2>
       </div>
