@@ -3,15 +3,13 @@
 }
 body{
   margin: 0;
-  padding: 0;
   font-family: 'Noto Sans', sans-serif;
   background-color: #575757;
   background-image: url('https://cdn.discordapp.com/attachments/771436352712998912/884064661195067422/Background.png');
   background-size: cover;
-  background-attachment: scroll;
-  background-blend-mode: luminosity;
+  background-attachment: fixed;
+  background-blend-mode: exclusion;
 }
-
 
 a{
   text-decoration: none;
@@ -38,18 +36,16 @@ a{
 }
 .menu{
   display: flex;
-  flex-flow: row;
+  justify-content: space-around;
   color: #000000;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
-  justify-content: space-around;
 }
 .button {
+  margin: 10px;
   font-weight: 600;
   font-size: 30px;
-  display: flex;
-  align-items: center;
   padding: 10px;
   height: 70px;
   border-radius: 15px;
@@ -85,6 +81,8 @@ a{
 }
 
 .textHover2{
+  display: flex;
+
   color: #000000;
   transition: all 0.2s;
 }
@@ -96,9 +94,9 @@ a{
 }
 
 .imgHeader{
+  position: relative;
   width: 100px;
-  height: 115px;
-  padding-bottom: 10px;
+  height: 100px;
 }
 .imgButton{
   width: 150px;
@@ -106,6 +104,16 @@ a{
   padding: 0px;
   margin: 10px;
 }
+.imgHover{
+  transition: all 0.2s;
+}
+.imgHover:hover{
+  transform: scale(1.1);
+}
+.imgHover:active{
+  transform: scale(1);
+}
+
 .list{
   list-style-type: none;
   display: flex;
